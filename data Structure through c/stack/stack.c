@@ -8,9 +8,8 @@ int stack[100] ;
 int push(int val){
     if(length == 100){
         printf("stack overflow");
-    }else{  
-        length++;
-        stack[length] = val ;
+    }else{
+        stack[++length] = val ;
     }
 }
 
