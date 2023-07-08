@@ -7,4 +7,5 @@ int main(){
     gets(s);
     printf("%s",s);
     return 0;
+    
 }
