@@ -36,8 +36,29 @@ void peek(){
     }
 }
 
+
+void print(){
+    if(length != -1){ 
+        for(int i = 0 ; i <= length ; i++){
+            printf("\n%d",stack[i]) ;
+        }
+    }else{
+        printf("stack is empty") ;
+    }
+}
+
+
 int main(){
-    char s[100] ;
-    printf("your stack values are");
+    for(int i = 0 ; i < 10 ; i++){
+        push(i) ;
+    }
+    int val1 = pop() ;
+    printf("%d\n",val1) ;
+    int val2 = pop() ;
+    printf("%d\n",val2) ;
+    printf("your stack values are") ;
+    print();
+    
+    
     return 0 ;
 }
