@@ -56,12 +56,15 @@ window.onload = function () {
     ctx.fillRect(x, y, marioWidth, marioHeight);
   }
 
+  
   function drawPlatforms() {
     ctx.fillStyle = 'gray';
     platforms.forEach((platform) => {
       ctx.fillRect(platform.x, platform.y, platformWidth, platformHeight);
     });
   }
+
+
 
   function drawScore() {
     ctx.font = '16px Arial';
@@ -74,6 +77,8 @@ window.onload = function () {
     ctx.fillStyle = 'white';
     ctx.fillText('Lives: ' + lives, canvas.width - 80, 20);
   }
+
+
 
   function updateMarioPosition() {
     // Horizontal movement
