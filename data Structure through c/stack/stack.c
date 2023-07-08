@@ -4,23 +4,29 @@
 int length = -1 ;
 int stack[100] ;
 
+int push(int val){
+    length++;
+    stack[length] = val ;
+}
+
 int pop(){
     if(length == -1){
         printf("stack underflow") ;
+    }
+    else if(length == 0){
+        
     }
     else{
         return stack[length--] ;
     }
 }
 
-
-
 void peek(){
     if(length == -1){
         printf("stack empty") ;
     }
     else{
-        return stack[length--] ;
+        printf("%d",stack[length]) ;
     }
 }
 
