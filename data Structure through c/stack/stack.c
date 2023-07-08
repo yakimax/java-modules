@@ -5,7 +5,7 @@ int length = -1 ;
 int stack[100] ;
 
 
-int push(int val){
+void push(int val){
     if(length == 100){
         printf("stack overflow");
     }else{
@@ -21,9 +21,8 @@ int pop(){
     else if(length == 0){
         
     }
-    else{
-        return stack[length--] ;
-    }
+    
+    return stack[length--] ;
 }
 
 
