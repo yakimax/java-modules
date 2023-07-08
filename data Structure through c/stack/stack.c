@@ -4,10 +4,16 @@
 int length = -1 ;
 int stack[100] ;
 
+
 int push(int val){
-    length++;
-    stack[length] = val ;
+    if(length == 100){
+        printf("stack overflow");
+    }else{  
+        length++;
+        stack[length] = val ;
+    }
 }
+
 
 int pop(){
     if(length == -1){
@@ -20,6 +26,7 @@ int pop(){
         return stack[length--] ;
     }
 }
+
 
 void peek(){
     if(length == -1){
