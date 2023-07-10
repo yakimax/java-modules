@@ -1,12 +1,9 @@
-#include <stdio.h>
-#include<string.h>
-int main()  
-{  
+#include<stdio.h>
 
-int a = 5 / 4 * 3 ;
-  printf ("%d",a);  
-//   printf ("\bsi");  
-//   printf ("\rha");  
-}  
-
-
+int main(int argc, char **argv)
+{
+    int i;
+    for(i=0; i<argc; i++)
+        printf("%s\n", argv[i]);
+    return 0;
+}
